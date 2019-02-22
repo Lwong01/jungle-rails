@@ -1,4 +1,7 @@
 class Admin::DashboardController < ApplicationController
-  def show
-  end
-end
+http_basic_authenticate_with :name => ENV['ADMIN_USERNAME'], :password => ENV['ADMIN_PASSWORD']
+    def show
+    end
+
+
+
